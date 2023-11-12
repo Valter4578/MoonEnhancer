@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880CF3CC2B00C683005C3ED2 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880CF3CB2B00C683005C3ED2 /* Colors.xcassets */; };
+		880CF3CF2B00C806005C3ED2 /* Color+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CF3CE2B00C806005C3ED2 /* Color+Colors.swift */; };
+		880CF3D22B00C875005C3ED2 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CF3D12B00C874005C3ED2 /* TabBarView.swift */; };
+		880CF3DD2B00D117005C3ED2 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CF3DC2B00D117005C3ED2 /* CameraView.swift */; };
+		880CF3E32B00EB09005C3ED2 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CF3E22B00EB09005C3ED2 /* CameraService.swift */; };
+		880CF3E52B00ED00005C3ED2 /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880CF3E42B00ED00005C3ED2 /* PhotoCaptureProcessor.swift */; };
 		88B82FAC2AE9320900922C95 /* MoonEnhancerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B82FAB2AE9320900922C95 /* MoonEnhancerApp.swift */; };
 		88B82FAE2AE9320900922C95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B82FAD2AE9320900922C95 /* ContentView.swift */; };
 		88B82FB02AE9320A00922C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B82FAF2AE9320A00922C95 /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		880CF3CB2B00C683005C3ED2 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		880CF3CE2B00C806005C3ED2 /* Color+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Colors.swift"; sourceTree = "<group>"; };
+		880CF3D12B00C874005C3ED2 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		880CF3DC2B00D117005C3ED2 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		880CF3E22B00EB09005C3ED2 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		880CF3E42B00ED00005C3ED2 /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
 		88B82FA82AE9320900922C95 /* MoonEnhancer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonEnhancer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B82FAB2AE9320900922C95 /* MoonEnhancerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonEnhancerApp.swift; sourceTree = "<group>"; };
 		88B82FAD2AE9320900922C95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		880CF3CD2B00C7ED005C3ED2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				880CF3CE2B00C806005C3ED2 /* Color+Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		880CF3D02B00C86C005C3ED2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				880CF3D12B00C874005C3ED2 /* TabBarView.swift */,
+				880CF3DB2B00D110005C3ED2 /* Camera */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		880CF3DB2B00D110005C3ED2 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				880CF3DC2B00D117005C3ED2 /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		880CF3E12B00EAE6005C3ED2 /* Serivces */ = {
+			isa = PBXGroup;
+			children = (
+				880CF3E22B00EB09005C3ED2 /* CameraService.swift */,
+				880CF3E42B00ED00005C3ED2 /* PhotoCaptureProcessor.swift */,
+			);
+			path = Serivces;
+			sourceTree = "<group>";
+		};
 		88B82F9F2AE9320900922C95 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +97,14 @@
 		88B82FAA2AE9320900922C95 /* MoonEnhancer */ = {
 			isa = PBXGroup;
 			children = (
+				880CF3E12B00EAE6005C3ED2 /* Serivces */,
+				880CF3CD2B00C7ED005C3ED2 /* Extensions */,
+				880CF3D02B00C86C005C3ED2 /* Modules */,
 				88B82FAB2AE9320900922C95 /* MoonEnhancerApp.swift */,
 				88B82FAD2AE9320900922C95 /* ContentView.swift */,
 				88B82FAF2AE9320A00922C95 /* Assets.xcassets */,
 				88B82FB12AE9320A00922C95 /* Preview Content */,
+				880CF3CB2B00C683005C3ED2 /* Colors.xcassets */,
 			);
 			path = MoonEnhancer;
 			sourceTree = "<group>";
@@ -125,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880CF3CC2B00C683005C3ED2 /* Colors.xcassets in Resources */,
 				88B82FB32AE9320A00922C95 /* Preview Assets.xcassets in Resources */,
 				88B82FB02AE9320A00922C95 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				880CF3CF2B00C806005C3ED2 /* Color+Colors.swift in Sources */,
 				88B82FAE2AE9320900922C95 /* ContentView.swift in Sources */,
+				880CF3E32B00EB09005C3ED2 /* CameraService.swift in Sources */,
+				880CF3D22B00C875005C3ED2 /* TabBarView.swift in Sources */,
+				880CF3E52B00ED00005C3ED2 /* PhotoCaptureProcessor.swift in Sources */,
+				880CF3DD2B00D117005C3ED2 /* CameraView.swift in Sources */,
 				88B82FAC2AE9320900922C95 /* MoonEnhancerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +325,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MoonEnhancer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App will use your camera to take photos ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +354,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MoonEnhancer/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App will use your camera to take photos ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
